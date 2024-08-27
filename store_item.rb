@@ -4,5 +4,12 @@
 # c) Use the attr_writer method to change a value
 
 class Store_items
-    initialize("apple" => 1.00, "pear" => 2.00, "bread" => 3.00)
-    @
+    def initialize(input_food1, input_food2, input_food3)
+    @food1 = input_food1
+    @food2 = input_food2
+    @food3 = input_food3
+    end
+end
+
+store_items = Store_items.new("bread", "corn", "sauce")
+p store_items
