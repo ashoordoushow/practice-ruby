@@ -62,5 +62,55 @@ p word.downcase
 
 # BASIC DELIBERATE PRACTICE LINK2
 
+# 1 # Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
+
+number = 10
+
+if number == 10
+  p 0
+else
+  p -1
+end
+
+number = 3
+if number == 10
+  p 0
+else
+  p -1
+end
+
+# 2 # Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
+
+number = 10
+if number < 10
+  p -1
+elsif number > 10
+  p 1
+else         # this else refers to the number being equal to 10 technically
+  p 0
+end
+
+# 3 # Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
+
+number1 = 27
+number2 = 89
+if number1 < 10 && number2 < 10 # '&&' ; means AND
+  p 1
+else
+  p 0
+end
+
+
+number3 = 2
+number4 = 5
+if number3 < 10 && number4 < 10
+  p 1
+else
+  0
+end
+
+# 4 # Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise.
+
+
 
 
