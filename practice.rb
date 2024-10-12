@@ -222,5 +222,82 @@ else
   p 1
 end
 
+# BASIC DELIBERATE PRACTICE LINK3
+
+# 1 # Write a while loop to print the numbers 1 through 10.
+
+x = 0
+while x <= 10
+  p x
+  x = x + 1
+end
+
+number = 0
+while number <= 10
+  p number
+  number = number + 1
+end
+
+numbero = 0
+while numbero <= 10           
+  p numbero              # this will stop printing as soon as the variable is greater then 10 and then ends the loop
+  numbero = numbero + 1  # this increases the variable by 1 
+end
+
+# 2 # Write a while loop that prints the word "hello" 5 times.
+
+variable = 0
+while variable < 5
+  p "hello"
+  variable = variable + 1
+end
+
+# 3 # Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
+
+while true                  #boolean
+  p "Enter a word: "        # prints syntax for context
+  input = gets.chomp        # input is the variable and is set to the 'gets.chomp' method which allows user to implement a response
+  if input == "stop"        # 'if statement' implemented inside of while loop to set this rule up requireing its own 'end' statement
+    break                   # 'break function' implemented after the user types "stop" 
+  end
+end 
+
+while true
+  p "Enter a word: "
+  input = gets.chomp
+  if input == "stop"
+    break
+  end
+end
+
+while true
+  p "Enter a word: "
+  input = gets.chomp
+  if input == "stop"
+    break
+  end
+end
+
+while true
+  p "Enter the word: "
+  input = gets.chomp
+  if input == "stop"
+    break
+  end
+end
+
+# 4 # Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
+
+number = 0
+while number <= 100
+  p number
+  number = number + 5
+end
+
+#LINK3 QUESTION 5 DELIBERATE PRACTICE
+# 5 # Write a while loop that prints the number 9000 ten times.
+
+
+
 
 
