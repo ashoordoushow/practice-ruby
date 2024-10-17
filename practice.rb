@@ -297,24 +297,24 @@
 #LINK3 QUESTION 5 DELIBERATE PRACTICE
 # 5 # Write a while loop that prints the number 9000 ten times.
 
-x = 0
-while x < 10
-  p 9000
-  x = x + 1
-end
+# x = 0
+# while x < 10
+#   p 9000
+#   x = x + 1
+# end
 
-number = 0
-while number < 10
-  p 9000
-  number = number + 1
-end
+# number = 0
+# while number < 10
+#   p 9000
+#   number = number + 1
+# end
 
-var = 0
+# var = 0
 
-while var < 10
-  p 9000
-  var = var + 1
-end
+# while var < 10
+#   p 9000
+#   var = var + 1
+# end
 
 # 6 # Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
 
@@ -328,37 +328,68 @@ end
 
 # 7 # Write a while loop that prints the numbers 50 to 70.
 
-number = 50
-while number <= 70
-  p number
-  number = number + 1
-end
+# number = 50
+# while number <= 70
+#   p number
+#   number = number + 1
+# end
 
 # 8 # Write a while loop that prints the phrase "Around the world" 144 times.
 
-number = 0
-while number < 144
-  p "Around the world"
-  number = number + 1
-end
+# number = 0
+# while number < 144
+#   p "Around the world"
+#   number = number + 1
+# end
 
 # 9 # Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
 
-while true
-  p "Enter a word: "
-  input = gets.chomp
-  if input.length > 5
-    break
-  end
-end
+# while true
+#   p "Enter a word: "
+#   input = gets.chomp
+#   if input > 5
+#     break
+#   end
+# end
 
-while true
-  p "Enter a word: "
-  input = gets.chomp
-  if input.length > 5
-    break
-  end
-end
+# while true                  #setting a boolean to true so the next line gets printed out
+#   p "Enter a word: "        #Substance
+#   input = gets.chomp         #This line is the method used to allow the user to enter a word
+#   if input.length > 5       #The ".length" method is equal to the number of letters in the word the user enters (integer)
+#     break                   #if the word is greater than 5 letters it breaks the loop, if it is less the loop keeps going infinitely 
+#   end
+# end
+
+# 10 # Write a while loop that prints the even numbers from 2 to 40.
+
+# number = 2
+# while number <= 40
+#   p number
+#   number += 2
+# end
+
+# DELIBERATE PRACTICE LINK4
+
+# 1 # Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+
+# words = ["popular", "basketball", "orange"]
+# words.push("drums")              # the .push method is used to add elements to the end of an array
+# words.push("cowbell")
+# p words
+
+# 2 # Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+
+# letters = ["a", "b", "c", "d"]
+# letters[1] = 3           #to change a section of the array you must call it with [] and set it equal to something else
+# p letters
+
+# 3 # Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+
+#ENDED THIS IS LINK4
+
+  
+
+
 
 
 
