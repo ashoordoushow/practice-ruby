@@ -385,9 +385,37 @@
 
 # 3 # Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
-#ENDED THIS IS LINK4
+# array = [2, 1, 4, 0, 42]
+# y = 0
+# while y < array.length
+#   p array[y]
+#   y = y + 1
+# end
 
-  
+# 4 # Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+
+# array = [3]
+# array.push(23)
+# array.push(2)
+# array.push(1)
+# p array
+
+# 5 # Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+
+# array = ["bobby", "camping", "bottle"]
+# array.delete("bottle")
+# array.push("BASKETBALL")
+# p array
+
+# OR 
+
+# array = ["hello", "hello", "hello"]
+# array[2] = array[2].upcase
+# pp array
+
+# 6 # 
+
+# DELIBERATE PRACTICE LINK4
 
 
 
