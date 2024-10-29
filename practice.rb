@@ -413,11 +413,160 @@
 # array[2] = array[2].upcase
 # pp array
 
-# 6 # 
+# 6 # Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
-# DELIBERATE PRACTICE LINK4
+# array = ["bobby", "ash", "michael"]      # this is how i did it works 
+# x = 1
+# while x < array.length
+#   p "bobby"
+#   x += 1
+#   p "ash"
+#   x += 1
+#   p "michael"
+# end
+
+# names = ["erika", "sal", "edgar"]       # this is a better way to do it apparently
+# index = 0
+# while index < names.length
+#   pp names[index]                       # this line is printing the value of the area using the index variables value
+#   index = index + 1
+# end
 
 
+# names = ["conor", "george", "bobby"]
+# index = 0
+# while index < names.length
+#   p names[index]
+#   index += 1
+# end
+
+# 7 # Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+# array = ["string1", "string2"] # this is how i did it and it works
+# array.push[2] = "string3"
+# p array
+
+# strings = ["black", "white"]   # this is the answer given in deliberate practice
+# strings.push("gray")
+# pp strings
+
+# strings = ["blue", "green"]
+# strings.push("purple")
+# p strings
+
+# 8 # Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
+
+# numbers = [2, 4, 8, 5, 0] #got it correct on the first try
+# numbers[0] *= 10
+# p numbers
+
+# 9 # Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
+
+# numbers = [23, 32]                                  # got it on my first attempt
+# index = 0
+# while index < numbers.length
+#   p numbers[index]
+#   index += 1
+# end
+
+# 10 # Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+
+# countries = ["United States", "Japan", "Russia"]    # first attempt got it
+# countries.push("Iran")
+# p countries
+
+# DELIBERATE PRACICE LINK5
+
+# 1 # Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+
+# personal_information = {"first_name" => "bobby", "last_name" => "george", "email_address" => "bobbygeorge2323@hotmail.com"}
+# p personal_information["first_name"]
+# p personal_information["last_name"]
+# p personal_information["email_address"]
 
 
+# In ruby you have to use '=>' to pass a value to a variable
+
+# 2 # Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+
+# personal_information = [                                  #got this correct first attempt, my way is better
+#   {"first name" => "jordan", "last name" => "bob"}, 
+#   {"first name" => "hillary", "last name" => "clinton"},
+#   {"first name" => "don", "last name" => "rickle"}
+# ]
+
+# p personal_information[0]
+
+# people = [
+#   { "first_name" => "Grace", "last_name" => "Hopper" },    # this is deliberate practices solution
+#   { "first_name" => "Mace", "last_name" => "Windu" },
+#   { "first_name" => "Robert", "last_name" => "Chase" }
+# ]
+# pp people[0]["first_name"]
+# pp people[0]["last_name"]
+
+# 3 # Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+
+# menu_items = {"hamburger" => 20, "steak" => 30, "lobster" => 40}   
+# menu_items["shrimp"] = 5     # to add something into a has you can write it into array brackets and set it equal to its value
+# p menu_items
+
+# shoes = {"jordans" => 100, "nikes" => 20, "adidas" => 10}
+# shoes["pumas"] = 90
+# p shoes
+
+# 4 # Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+
+# book = {"title" => "greasers", "author" => "i forgot", "number of pages" => 300, "language" => "English"}
+# p book["title"]
+# p book["author"]
+# p book["number of pages"]                   # got it correct on the first attempt
+# p book["language"]
+
+# 5 # Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+# books = [
+#   {"title" => "million dollar strike", "author" => "JP Morgan"},      # got it on my first attempt
+#   {"title" => "harry potter", "author" => "BOBBY"},
+#   {"title" => "Algebra 2", "author" => "Doctor John"},
+# ]
+
+# p books[2]["author"]
+
+# 6 # Make a hash to store 3 different states and their capitals. Then add a new state and capital and print the hash to see the
+
+# state_and_capitals = {"California" => "Sacramento", "Texas" => "Austin", "Florida" => "Tallahessee"}
+# state_and_capitals["New York"] = "Albany"         # got it on my first attempt
+# p state_and_capitals
+
+# 7 # Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+# laptops = {"Brand" => "HP", "Model" => "first gen", "Year" => 2007}  # first attempt got it
+# p laptops["Brand"]
+# p laptops["Model"]
+# p laptops["Year"]
+
+# 8 # Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+# laptops = [
+#   {"Brand" => "Macbook", "Model" => "M2"},              # got it on my first attempt
+#   {"Brand" => "HP", "Model" => "3rd Gen"},
+#   {"Brand" => "NZXT", "Model" => "Custom"}
+# ]
+# p laptops[1]["Model"]
+
+# 9 # Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
+
+# words = {"Car" => "Moving vehicle", "Context" => "details to a specific topic"} 
+# words["Pen"] = "inked utensil for writing"                          # got it on my first attempt
+# p words
+
+# 10 # Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+# shirt = {"Brand" => "nike", "Color" => "blue", "Size" => "Large"} #first attempt got it
+# p shirt["Brand"]
+# p shirt["Color"]
+# p shirt["Size"]
+
+# DELIBERATE PRACTICE LINK 6
 
