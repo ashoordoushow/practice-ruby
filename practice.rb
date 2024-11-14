@@ -570,3 +570,77 @@
 
 # DELIBERATE PRACTICE LINK 6
 
+# 1 # Write a method that takes in a number and returns the number times two. Then run the method and print the result.
+
+
+# def get_double(number)         
+#   return number * 2
+# end
+
+# p get_double(8)
+
+# def get_double(number)        # this is how this is how you write a 'method'
+#   return number * 2
+# end
+
+# p get_double(20)
+
+# 2 # Write a method that takes in a string and returns the string with all capital letters. Then run the method and print the result.
+
+# def change_to_uppercase(string)
+#   return string.upcase
+# end
+
+# p change_to_uppercase('hello')
+
+# 3 # Write a method that takes in two numbers and returns the first number subtracted by the second. Then run the method and print the result.
+
+# def subtracted(number1, number2)
+#   return number1 - number2
+# end
+
+# p subtracted(30, 10)
+
+# 4 # Write a method that takes in a number and returns the number times itself. Then run the method and print the result.
+
+# def times_itself(number)
+#   return number * number
+# end
+
+# p times_itself(10)
+
+# 5 # Write a method that takes in a string and returns the first letter of the string. Then run the method and print the result.
+
+# def first_letter(string)
+#   return string[0]
+# end
+
+# p first_letter("bobby")
+
+# 6 # Write a method that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the method and print the result.
+
+# def three_strings(string1, string2, string3)
+#   return string1 + " " + string2 + " " + string3
+# end
+
+# p three_strings("Only", "in", "Chicago")
+
+# # OR
+
+# def string_combiner(string1, string2, string3)   #this is the proper way 'interpolation'
+#   return "#{string1} #{string2} #{string3}"
+# end
+
+# pp string_combiner("the", "cat", "jumped")
+
+# 7 Write a method that takes in a number and returns the number as a string. Then run the method and print the result.
+
+# def number_to_string(number)
+#   return number.to_s
+# end
+
+# p number_to_string(23)
+
+# 8 # Write a method that takes in a string and returns the string repeated 5 times. Then run the method and print the result.
+
+# LINK6 DB
