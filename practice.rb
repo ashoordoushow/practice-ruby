@@ -207,13 +207,13 @@
   
 # ^^  this code block you came up with works! But to right this code in the most common way to execute the objective is below V
 
-while true                    # difference is setting the while loop condition to a truthy boolean instead of an actual condition so it begins running
-  p "Please Enter A Word:"
-  word = gets.chomp
-  if word == "stop"
-    break
-  end
-end
+# while true                    # difference is setting the while loop condition to a truthy boolean instead of an actual condition so it begins running
+#   p "Please Enter A Word:"
+#   word = gets.chomp
+#   if word == "stop"
+#     break
+#   end
+# end
 
 =begin 
 while loop concept - 
@@ -223,3 +223,39 @@ while condition [do]
 
 =end
 
+# 4 Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
+
+# x = 0
+
+# while x <= 100
+#   p x
+#   x +=5
+# end
+
+# 5 Write a while loop that prints the number 9000 ten times.
+
+# x = 0
+
+# while x < 10
+#   p 9000
+#   x += 1
+# end
+
+# 6 Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
+
+# while true 
+#   p "Please enter a number:"
+#   user_input = gets.chomp.to_i          #the .chomp specifically removes the trailing \n newline at the end of a string, it's good practice to always use it with the built in gets method in Ruby
+#   if user_input > 10
+#     break
+#   end
+# end
+
+# 7 Write a while loop that prints the numbers 50 to 70.
+
+x = 50
+
+while x <= 70
+  p x
+  x += 1
+end
