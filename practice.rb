@@ -253,9 +253,28 @@ while condition [do]
 
 # 7 Write a while loop that prints the numbers 50 to 70.
 
-x = 50
+# x = 50
 
-while x <= 70
-  p x
-  x += 1
+# while x <= 70
+#   p x
+#   x += 1
+# end
+
+# 8 Write a while loop that prints the phrase "Around the world" 144 times.
+
+# x = 0
+
+# while x < 144
+#   p "Around the world"
+#   x += 1
+# end
+
+# 9 Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
+
+while true
+  p "Please enter a word:"
+  input = gets.chomp
+  if input.length > 5
+    break
+  end
 end
