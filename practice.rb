@@ -281,8 +281,33 @@ while condition [do]
 
 # 10 Write a while loop that prints the even numbers from 2 to 40.
 
-x = 2
-while x <= 40
-  p x
-  x += 2
-end
+# x = 2
+# while x <= 40
+#   p x
+#   x += 2
+# end
+
+# Deliberate Practice Link 4 - Write an array, read items from an array, and add new items to existing array
+
+# 1 Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+
+# words = ["hello", "goodbye", "never"]
+
+# words.push("basketball")
+# words.push("happy")
+
+# p words
+
+# 2 Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+
+# letters = ["a", "b", "o", "t"]
+
+# letters[1] = 2
+
+# p letters
+
+# 3 Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+
+numbers = [2, 45, 90, 3]
+
+while 
