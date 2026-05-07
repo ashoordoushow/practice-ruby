@@ -329,22 +329,77 @@
 
 # 5 Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
 
-strings = ["goodnight", "goodmorning", "good afternoon"]
-strings[2] = strings[2].upcase
-p strings
+# strings = ["goodnight", "goodmorning", "good afternoon"]
+# strings[2] = strings[2].upcase
+# p strings
 
 # 6 Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
+names = ["michael", "jordan", "lebron"]
+x = 0
+while x < 3
+  p names[x]
+  x += 1
+end
 
 # 7 Create an array to store 2 strings. Then add one string to the array and print the array on one line.
 
+strings = ["string1", "string2"]
+strings.push("string3")
+p strings
 
 # 8 Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
+numbers = [2, 32, 43, 12, 34]
+numbers[0] = numbers[0] * 10
+p numbers
 
 # 9 Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
+numbers = [23, 32]
+x = 0
+while x < numbers.length
+  p numbers[x]
+  x += 1
+end
 
 # 10 Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+
+countries = ["United States", "Israel", "Canada"]
+countries.push("Japan")
+p countries
+
+# Deliberate Practice Link 5 - Write a HASH, read items from a HASH, and add new items to existing HASH
+
+# 1 Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+
+
+# 2 Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+
+
+# 3 Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+
+
+# 4 Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+
+
+# 5 Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+
+# 6 Make a hash to store 3 different states and their capitals. Then add a new state and capital and print the hash to see the result.
+
+
+# 7 Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+
+# 8 Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+
+# 9 Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
+
+
+# 10 Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+
 
 
