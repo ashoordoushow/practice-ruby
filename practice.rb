@@ -314,10 +314,10 @@
 # 3 Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
 # numbers = [2, 5, 1, 9, 32]
-# x = 0
-# while x < 5
-#   p numbers[x]
-#   x += 1
+# index = 0
+# while index < 5
+#   p numbers[index]
+#   index += 1
 # end
 
 # 4 Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
@@ -335,71 +335,122 @@
 
 # 6 Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
-names = ["michael", "jordan", "lebron"]
-x = 0
-while x < 3
-  p names[x]
-  x += 1
-end
+# names = ["michael", "jordan", "lebron"]
+# index = 0
+# while index < 3
+#   p names[index]
+#   index += 1
+# end
 
 # 7 Create an array to store 2 strings. Then add one string to the array and print the array on one line.
 
-strings = ["string1", "string2"]
-strings.push("string3")
-p strings
+# strings = ["string1", "string2"]
+# strings.push("string3")
+# p strings
 
 # 8 Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
-numbers = [2, 32, 43, 12, 34]
-numbers[0] = numbers[0] * 10
-p numbers
+# numbers = [2, 32, 43, 12, 34]
+# numbers[0] = numbers[0] * 10
+# p numbers
 
 # 9 Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
-numbers = [23, 32]
-x = 0
-while x < numbers.length
-  p numbers[x]
-  x += 1
-end
+# numbers = [23, 32] 
+# index = 0                   # this is called indexing
+# while index < numbers.length
+#   p numbers[index]
+#   index += 1
+# end
 
 # 10 Create an array to store names of 3 different countries. Then add one more country and print the array one line.
 
-countries = ["United States", "Israel", "Canada"]
-countries.push("Japan")
-p countries
+# countries = ["United States", "Israel", "Canada"]
+# countries.push("Japan")
+# p countries
 
 # Deliberate Practice Link 5 - Write a HASH, read items from a HASH, and add new items to existing HASH
 
 # 1 Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
 
+# person = {"first_name" => "Michael", "last_name" => "Jordan", "email" => "mjordan23@gmail.com"}
+# p person["first_name"]
+# p person["last_name"]
+# p person["email"]
 
-# 2 Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+# 2 Make an ARRAY of HASHES to store the first name and last name for 3 different people. Then print out the first person's info.
 
+# people = [
+#       {"first_name" => "Mike", "last_name" => "bobby"},
+#       {"first_name" => "sam", "last_name" => "shamo"},
+#       {"first_name" => "Mike", "last_name" => "bobby"}
+#   ]
+
+#   p people[0]["first_name"]
+#   p people[0]["last_name"]  
 
 # 3 Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+
+# menu_items = {burger: 3.99, fries: 1.99, drink: 0.99}  # decimal numbers and whole numbers are allowed to be used in hashes without having to use "", but REMEMBER if you use decimal number make sure you have the value of 0. in front of the decimal point otherwise your program will not run (error). Ex. works = 0.99 ; does not work = .99
+# menu_items["cake"] = 0.50  # [] is used so you can add the value key inside there, then you set it equal to the value of the key
+# p menu_items
 
 
 # 4 Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
+# book = {title: "NBA", author: "Steven", number_of_pages: 300, language: "French"}
+# p book[:title]
+# p book[:author]
+# p book[:number_of_pages]
+# p book[:language]
 
 # 5 Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
+books = [
+  {title: "Math", author: "Einstein"}, 
+  {title: "Once Upon A Time", author: "Gibson"}, 
+  {title: "Bible", author: "Holy Spirit"}
+]
+
+p books[2][:author]
 
 # 6 Make a hash to store 3 different states and their capitals. Then add a new state and capital and print the hash to see the result.
 
+states = {Illinois: "Springfield", Texas: "Austin", Florida: "Tallahassee"}
+states[:California] = "Sacramento"
+p states
 
 # 7 Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+laptop = {brand: "HP", model: "Core 7", year: 2015}
+p laptop[:brand]
+p laptop[:model]
+p laptop[:year]
 
 
 # 8 Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
+laptops = 
+  [
+    {brand: "Apple", model: "M2"}, 
+    {brand: "Apple", model: "Air"}, 
+    {brand: "Dell", model: "aseries"}
+]
+
+p laptops[1]
 
 # 9 Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
+
+words = {Cordial: "To have a peacful, friendly, position relationship", Resource: "Tools that help you enhance current goal(s); assistance for improvement."}
+words[:Country] = "A large geographical peace of land filled with states."
+p words
 
 
 # 10 Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
 
+shirt = {brand: "Nike", color: "Black", size: "Large"}
+p shirt[:brand]
+p shirt[:color]
+p shirt[:size]
 
-
-
+# Deliberate Practice Link 6 - Write a CUSTOM METHOD with valid syntax
