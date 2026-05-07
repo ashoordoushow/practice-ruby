@@ -290,9 +290,61 @@
 
 # 10 Write a while loop that prints the even numbers from 2 to 40.
 
-number = 2
-while number <= 40
-  p number
-  number += 2
-end
+# number = 2
+# while number <= 40
+#   p number
+#   number += 2
+# end
+
+
+# Deliberate Practice Link 4 - Write an ARRAY, read ITEMS from an ARRAY, and add new ITEMS to existing ARRAY
+
+# 1 Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+
+  # words = ["hello", "no", "bball"]
+  # words.push("new", "old")
+  # p words
+
+# 2 Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+
+  # letters = ["i", "o", "j", "s"]
+  # letters[1] = 2
+  # p letters
+
+# 3 Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+
+# numbers = [2, 5, 1, 9, 32]
+# x = 0
+# while x < 5
+#   p numbers[x]
+#   x += 1
+# end
+
+# 4 Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+
+# numbers = [1]
+# numbers.push(3, 12, 32)
+# p numbers
+
+
+# 5 Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+
+strings = ["goodnight", "goodmorning", "good afternoon"]
+strings[2] = strings[2].upcase
+p strings
+
+# 6 Create an array to store 3 names. Then print out each name on separate lines with a while loop.
+
+
+# 7 Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+
+# 8 Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
+
+
+# 9 Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
+
+
+# 10 Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+
 
