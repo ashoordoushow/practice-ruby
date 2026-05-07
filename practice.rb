@@ -406,51 +406,152 @@
 
 # 5 Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
-books = [
-  {title: "Math", author: "Einstein"}, 
-  {title: "Once Upon A Time", author: "Gibson"}, 
-  {title: "Bible", author: "Holy Spirit"}
-]
+# books = [
+#   {title: "Math", author: "Einstein"}, 
+#   {title: "Once Upon A Time", author: "Gibson"}, 
+#   {title: "Bible", author: "Holy Spirit"}
+# ]
 
-p books[2][:author]
+# p books[2][:author]
 
 # 6 Make a hash to store 3 different states and their capitals. Then add a new state and capital and print the hash to see the result.
 
-states = {Illinois: "Springfield", Texas: "Austin", Florida: "Tallahassee"}
-states[:California] = "Sacramento"
-p states
+# states = {Illinois: "Springfield", Texas: "Austin", Florida: "Tallahassee"}
+# states[:California] = "Sacramento"
+# p states
 
 # 7 Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
-laptop = {brand: "HP", model: "Core 7", year: 2015}
-p laptop[:brand]
-p laptop[:model]
-p laptop[:year]
+# laptop = {brand: "HP", model: "Core 7", year: 2015}
+# p laptop[:brand]
+# p laptop[:model]
+# p laptop[:year]
 
 
 # 8 Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
-laptops = 
-  [
-    {brand: "Apple", model: "M2"}, 
-    {brand: "Apple", model: "Air"}, 
-    {brand: "Dell", model: "aseries"}
-]
+# laptops = 
+#   [
+#     {brand: "Apple", model: "M2"}, 
+#     {brand: "Apple", model: "Air"}, 
+#     {brand: "Dell", model: "aseries"}
+# ]
 
-p laptops[1]
+# p laptops[1]
 
 # 9 Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
-words = {Cordial: "To have a peacful, friendly, position relationship", Resource: "Tools that help you enhance current goal(s); assistance for improvement."}
-words[:Country] = "A large geographical peace of land filled with states."
-p words
+# words = {Cordial: "To have a peacful, friendly, position relationship", Resource: "Tools that help you enhance current goal(s); assistance for improvement."}
+# words[:Country] = "A large geographical peace of land filled with states."
+# p words
 
 
 # 10 Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
 
-shirt = {brand: "Nike", color: "Black", size: "Large"}
-p shirt[:brand]
-p shirt[:color]
-p shirt[:size]
+# shirt = {brand: "Nike", color: "Black", size: "Large"}
+# p shirt[:brand]
+# p shirt[:color]
+# p shirt[:size]
 
 # Deliberate Practice Link 6 - Write a CUSTOM METHOD with valid syntax
+
+# for javascript it is:
+# function nameOfFunction(where arguement OR known as args gets passed - AKA Parameters) {   <-- parameters in () is known to be Placeholders - Arguements - are known to be the Value that gets passed into the the function!
+#   defined function info here;
+# }
+# nameOfFunction(Arguement);
+
+# for Ruby creating a method includes "def" name(parameter/placeholder, or arguement(if value passed into function)) and "end" thats  - NO semicolon or colon requeired
+# def function_name(parameter)
+#   return definition * definition
+# end
+
+# p number_doubled(arguement)
+
+# 1 Write a METHOD that takes in a number and returns the number times two. Then run the method and print the result.
+
+  # def number_doubled(number)
+  #   return number * 2
+  # end
+
+  # p number_doubled(5)
+
+
+# 2 Write a method that takes in a string and returns the string with all capital letters. Then run the method and print the result.
+
+  def upcase(string)
+    return string.upcase
+  end
+
+  p upcase("furniture")
+
+
+# 3 Write a method that takes in two numbers and returns the first number subtracted by the second. Then run the method and print the result.
+
+def numbers_subtracted(first_number, second_number)
+  return first_number - second_number
+end
+
+p numbers_subtracted(10, 7)
+
+
+# 4 Write a method that takes in a number and returns the number times itself. Then run the method and print the result.
+
+def doubled(number)
+  return number * number
+end
+
+p doubled(3)
+
+# 5 Write a method that takes in a string and returns the first letter of the string. Then run the method and print the result.
+
+def first_letter(string)
+  return string[0]
+end
+
+p first_letter("basketball")
+
+
+# 6 Write a method that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the method and print the result.
+
+def spaces(string1, string2, string3)
+  return string1 + " " + string2 + " " + string3  # used concatentation
+  #OR you can use interpolation
+  # return "#{string1} #{string2} #{string3}"
+end
+
+p spaces("How", "are", "you")
+
+# 7 Write a method that takes in a number and returns the number as a string. Then run the method and print the result.
+
+def to_string(number)
+  return number.to_s
+end
+
+p to_string(5)
+
+# 8 Write a method that takes in a string and returns the string repeated 5 times. Then run the method and print the result.
+
+def times_five(string)
+  return string * 5
+end
+
+p times_five("hello")
+
+
+# 9 Write a method that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the method and print the result.
+
+def average(number_one, number_two, number_three)
+  return (number_one + number_two + number_three) / 3.0 # this is the best way to right it incase the numbers average ends up being a decimal number.
+end
+
+p average(21, 50, 21)
+
+# 10 Write a method that takes in a number and returns the number times 10 plus 30. Then run the method and print the result.
+
+def times_ten_plus_thirty(number)
+  return number * 10 + 30
+end
+
+p times_ten_plus_thirty(2)
+
