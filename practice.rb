@@ -479,79 +479,122 @@
 
 # 2 Write a method that takes in a string and returns the string with all capital letters. Then run the method and print the result.
 
-  def upcase(string)
-    return string.upcase
-  end
+  # def upcase(string)
+  #   return string.upcase
+  # end
 
-  p upcase("furniture")
+  # p upcase("furniture")
 
 
 # 3 Write a method that takes in two numbers and returns the first number subtracted by the second. Then run the method and print the result.
 
-def numbers_subtracted(first_number, second_number)
-  return first_number - second_number
-end
+# def numbers_subtracted(first_number, second_number)
+#   return first_number - second_number
+# end
 
-p numbers_subtracted(10, 7)
+# p numbers_subtracted(10, 7)
 
 
 # 4 Write a method that takes in a number and returns the number times itself. Then run the method and print the result.
 
-def doubled(number)
-  return number * number
-end
+# def doubled(number)
+#   return number * number
+# end
 
-p doubled(3)
+# p doubled(3)
 
 # 5 Write a method that takes in a string and returns the first letter of the string. Then run the method and print the result.
 
-def first_letter(string)
-  return string[0]
-end
+# def first_letter(string)
+#   return string[0]
+# end
 
-p first_letter("basketball")
+# p first_letter("basketball")
 
 
 # 6 Write a method that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the method and print the result.
 
-def spaces(string1, string2, string3)
-  return string1 + " " + string2 + " " + string3  # used concatentation
-  #OR you can use interpolation
-  # return "#{string1} #{string2} #{string3}"
-end
+# def spaces(string1, string2, string3)
+#   return string1 + " " + string2 + " " + string3  # used concatentation
+#   #OR you can use interpolation
+#   # return "#{string1} #{string2} #{string3}"
+# end
 
-p spaces("How", "are", "you")
+# p spaces("How", "are", "you")
 
 # 7 Write a method that takes in a number and returns the number as a string. Then run the method and print the result.
 
-def to_string(number)
-  return number.to_s
-end
+# def to_string(number)
+#   return number.to_s
+# end
 
-p to_string(5)
+# p to_string(5)
 
 # 8 Write a method that takes in a string and returns the string repeated 5 times. Then run the method and print the result.
 
-def times_five(string)
-  return string * 5
-end
+# def times_five(string)
+#   return string * 5
+# end
 
-p times_five("hello")
+# p times_five("hello")
 
 
 # 9 Write a method that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the method and print the result.
 
-def average(number_one, number_two, number_three)
-  return (number_one + number_two + number_three) / 3.0 # this is the best way to right it incase the numbers average ends up being a decimal number.
-end
+# def average(number_one, number_two, number_three)
+#   return (number_one + number_two + number_three) / 3.0 # this is the best way to right it incase the numbers average ends up being a decimal number.
+# end
 
-p average(21, 50, 21)
+# p average(21, 50, 21)
 
 # 10 Write a method that takes in a number and returns the number times 10 plus 30. Then run the method and print the result.
 
-def times_ten_plus_thirty(number)
-  return number * 10 + 30
+# def times_ten_plus_thirty(number)
+#   return number * 10 + 30
+# end
+
+# p times_ten_plus_thirty(2)
+
+# Deliberate Practice Link 7(final link for basic level) - Write a CUSTOM CLASS with valid syntax
+
+# 1 Write a Song class with attributes for name, artist, and duration.
+
+class Song
+  def initialize(name, artist, duration)
+  @name = name
+  @artist = artist
+  @duration = duration
+  end
 end
 
-p times_ten_plus_thirty(2)
+song = Song.new("Beautiful Crazy", "Luke Combs", "10:00")
+p song
+
+# 2 Write a Rectangle class with attributes for width and height.
+
+
+# 3 Write a Person class with attributes for name and age.
+
+
+# 4 Write a Location class with attributes for latitude and longitude.
+
+
+# 5 Write an Account class with attributes for name and balance.
+
+
+# 6 Write a Movie class with attributes for title, director, and year.
+
+
+# 7 Write a Car class with attributes for make, model, year, and color.
+
+
+# 8 Write a Point class with attributes for x, y, and z coordinates.
+
+
+# 9 Write a Book class with attributes for title, author, and year.
+
+
+# 10 Write a Plant class with attributes for name, size, and price.
+
+
 

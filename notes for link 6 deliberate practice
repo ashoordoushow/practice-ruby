@@ -1,0 +1,422 @@
+Custom methods are one of the MOST important concepts in programming because they teach you how to:
+
+* organize logic
+* reuse code
+* break problems into smaller parts
+* write scalable applications
+
+Methods are basically:
+
+```text id="v5grdt"
+named reusable instructions
+```
+
+Without methods, real applications would become gigantic unreadable messes.
+
+---
+
+# What a Method Really Is
+
+Instead of rewriting code over and over:
+
+```ruby id="ah3hvn"
+p 5 * 2
+p 10 * 2
+p 20 * 2
+```
+
+you create reusable logic:
+
+```ruby id="3g7fb8"
+def number_doubled(number)
+  return number * 2
+end
+```
+
+Now you can reuse it forever:
+
+```ruby id="4s4k20"
+number_doubled(5)
+number_doubled(10)
+number_doubled(20)
+```
+
+This is HUGE in real engineering.
+
+---
+
+# Real Project Examples
+
+---
+
+# Example 1 — Authentication        Authentication - means verifying who a user is; "Are you really the person you claim to be?" - example you go to a gym -> employee asks for membership ID,name, maybe photo ->  if it matches your authenticated (granted access) ; so when users enters credentials -> application checks database(if correct) -> granted access.
+
+Real apps have methods like:
+
+```ruby id="y9l7rf"
+def valid_password?(password)
+```
+
+or:
+
+```ruby id="vh7gln"
+def logged_in_user
+```
+
+Methods organize reusable application logic.
+
+---
+
+# Example 2 — Formatting Data
+
+You practiced:
+
+```ruby id="slrlxt"
+def upcase(string)
+```
+
+Real app example:
+
+```ruby id="d83rq8"
+def format_username(username)
+  return username.downcase.strip
+end
+```
+
+This might clean user input before saving to the database.
+
+---
+
+# Example 3 — Calculations
+
+You practiced:
+
+```ruby id="afkqcb"
+def average(number_one, number_two, number_three)
+```
+
+Real app usage:
+
+```ruby id="f69rmv"
+def calculate_total(cart_items)
+```
+
+or:
+
+```ruby id="74q3iq"
+def calculate_tax(price)
+```
+
+E-commerce sites constantly use methods for calculations.
+
+---
+
+# Example 4 — API Logic
+
+Real backend example:
+
+```ruby id="3t39wb"
+def fetch_jobs
+```
+
+or:
+
+```ruby id="0y0jj5"
+def send_email
+```
+
+Methods separate responsibilities in an application.
+
+---
+
+# Example 5 — Rails Controllers    Rails - uses MVC architecture M(Model) - Handles database/data, V(View) - Handles UI/display, C(Controller) - Acts as the middleman; Handles requests, logic flow, responses.
+Ex. Simple Analogy
+  Restaurant analogy:
+          ↓
+  Customer: frontend/user
+          ↓
+  Kitchen: database/model
+          ↓
+  Waiter:controller
+          ↓
+  The waiter:
+  takes request
+  communicates with kitchen
+  returns food/response
+
+  That’s basically a controller.
+
+In Rails:
+
+```ruby id="j4b1jc"
+def create
+```
+
+```ruby id="v9rdrs"
+def update
+```
+
+```ruby id="k8b9e7"
+def destroy
+```
+
+These are all methods.
+
+Rails apps are FULL of methods.
+
+---
+
+# Example 6 — React Components      React Components - are a reusable piece of UI/codel; instead of writing one giant web page you - Ex. write React component(methods) ↓
+function Welcome() {              <- this is a React Component
+  return <h1>Hello</h1>;
+}
+        ↓
+How you use it -> <Welcome />            Components make frontend development: reusable, organized, scalable, maintainable
+
+Even React functions/components are conceptually similar.
+
+JavaScript:
+
+```javascript id="qlk2xv"
+function JobCard(props) {
+  return <div>{props.title}</div>;
+}
+```
+
+That’s reusable logic too.
+
+Methods/functions are everywhere in programming.
+
+---
+
+# Parameters and Arguments
+
+This is VERY important.
+
+You wrote:
+
+```ruby id="1u6d8g"
+def number_doubled(number)
+```
+
+`number` is the parameter (placeholder).
+
+Then:
+
+```ruby id="qcfj0i"
+number_doubled(5)
+```
+
+`5` is the argument (actual value passed in).
+
+This matters because real applications constantly receive dynamic data.
+
+Example:
+
+```ruby id="gh0e6x"
+def greet(name)
+  return "Hello #{name}"
+end
+```
+
+Now the method works for ANY name:
+
+```ruby id="4g1c9p"
+greet("Ashoor")
+greet("Michael")
+greet("Sarah")
+```
+
+That’s reusable programming.
+
+---
+
+# Why Reusability Matters
+
+Imagine NOT using methods.
+
+You’d repeat logic everywhere:
+
+```ruby id="rzy73n"
+total = item1 + item2 + item3
+```
+
+again and again and again.
+
+Instead:
+
+```ruby id="yt9m7r"
+def calculate_total(items)
+```
+
+Cleaner.
+Reusable.
+Maintainable.
+
+This is professional engineering practice.
+
+---
+
+# Real Engineering Skill You're Building
+
+Methods teach:
+
+* abstraction - means - hiding complicated details and exposing only what you need to use - Ex. word.upcase - You know: it makes letters uppercase But you do NOT need to know: how Ruby internally loops through characters, memory operations, low-level implementation
+* organization
+* modular thinking - means breaking a large problem/application into smaller organized pieces; instead of trying to build everything in one giant block of code.
+* reusable logic
+* scalability
+* cleaner code
+
+This is one of the biggest transitions from:
+
+> “writing random scripts”
+
+to:
+
+> “building actual software”
+
+---
+
+# Your Exercises Specifically
+
+---
+
+# This One:
+
+```ruby id="e9w3r7"
+def first_letter(string)
+```
+
+Real app usage:
+
+```ruby id="69nm70"
+def user_initial(user)
+  return user.name[0]
+end
+```
+
+Could generate profile icons.
+
+---
+
+# This One:
+
+```ruby id="6j8e6q"
+return number.to_s
+```
+
+This teaches data conversion.
+
+Real app usage:
+
+```ruby id="u7tsnx"
+price.to_s
+id.to_s
+```
+
+Very common when formatting data for:                         Formatting - means changing or organizing data into the structure/appearance you want
+
+* APIs
+* HTML
+* JSON
+* databases
+
+---
+
+# This One:
+
+```ruby id="y7xwdr"
+string * 5
+```
+
+This teaches method behavior and string operations.
+
+Real example:
+
+```ruby id="y0t4mw"
+"-" * 50
+```
+
+to generate separators in logs or console output.
+
+---
+
+# This One:
+
+```ruby id="lrzjbd"
+(number_one + number_two + number_three) / 3.0
+```
+
+VERY important concept:
+
+* integer vs decimal division
+
+Real bug prevention skill.
+
+Without `3.0`:
+
+```ruby id="th5kfe"
+5 / 2
+```
+
+might return:
+
+```text id="6g1yki"
+2
+```
+
+instead of:
+
+```text id="y9e8g0"
+2.5
+```
+
+Understanding data types is huge in real engineering.
+
+---
+
+# Biggest Picture
+
+Methods are how developers:
+
+* structure applications
+* reduce repetition
+* organize complexity
+
+Large applications are basically:
+
+* thousands of methods
+* working together
+
+Without methods:
+
+* Rails wouldn’t exist
+* React wouldn’t exist
+* APIs wouldn’t exist
+
+---
+
+# Most Important Mindset Shift
+
+Right now you are learning:
+
+```text id="d1zv7n"
+“How do I create reusable logic?”
+```
+
+That’s one of the deepest software engineering concepts there is.
+
+Because eventually your brain stops thinking:
+
+```text id="29f8yf"
+“I need to write code.”
+```
+
+and starts thinking:
+
+```text id="0ysdfw"
+“I should create a reusable method for this.”
+```
+
+That’s real developer thinking.
