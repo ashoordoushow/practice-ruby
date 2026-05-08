@@ -559,138 +559,227 @@
 
 # 1 Write a Song class with attributes for name, artist, and duration.
 
-class Song
-  def initialize(name, artist, duration)
-    @name = name
-    @artist = artist
-    @duration = duration
-  end
-end
+# class Song
+#   def initialize(name, artist, duration)
+#     @name = name
+#     @artist = artist
+#     @duration = duration
+#   end
+# end
 
-  song = Song.new("Ommemma", "Chandler Moore", "5:00")
-  p song
+#   song = Song.new("Ommemma", "Chandler Moore", "5:00")
+#   p song
 
 # 2 Write a Rectangle class with attributes for width and height.
 
-class Rectangle
-  def initialize(width, height)
-    @width = width
-    @height = height
-  end
-end
+# class Rectangle
+#   def initialize(width, height)
+#     @width = width
+#     @height = height
+#   end
+# end
 
-rectangle = Rectangle.new(12, 10)
-p rectangle
+# rectangle = Rectangle.new(12, 10)
+# p rectangle
 
 
 # 3 Write a Person class with attributes for name and age.
 
-class Person
-  def initialize(name, age)
-    @name = name
-    @age = age
-  end
-end
+# class Person
+#   def initialize(name, age)
+#     @name = name
+#     @age = age
+#   end
+# end
 
-person = Person.new("Mikey", 27)
-p person
+# person = Person.new("Mikey", 27)
+# p person
     
 
 # 4 Write a Location class with attributes for latitude and longitude.
 
-class Location
-  def initialize(latitude, longitude)
-    @latitude = latitude
-    @longitude = longitude
-  end
-end
+# class Location
+#   def initialize(latitude, longitude)
+#     @latitude = latitude
+#     @longitude = longitude
+#   end
+# end
 
-location = Location.new(57.3, 34.2)
-p location
+# location = Location.new(57.3, 34.2)
+# p location
 
 
 # 5 Write an Account class with attributes for name and balance.
 
-class Account
-  def initialize(name, balance)
-    @name = name
-    @balance = balance
-  end
-end
+# class Account
+#   def initialize(name, balance)
+#     @name = name
+#     @balance = balance
+#   end
+# end
 
-account = Account.new("Chase", "$1,000,000")
-p account
+# account = Account.new("Chase", "$1,000,000")
+# p account
 
 
 # 6 Write a Movie class with attributes for title, director, and year.
 
-class Movie
-  def initialize(title, director, year)
-    @title = title
-    @director = director
-    @year = year
-  end
-end
+# class Movie
+#   def initialize(title, director, year)
+#     @title = title
+#     @director = director
+#     @year = year
+#   end
+# end
 
-movie = Movie.new("Titanic", "Michael", "2001")
-p movie
+# movie = Movie.new("Titanic", "Michael", "2001")
+# p movie
 
 
 # 7 Write a Car class with attributes for make, model, year, and color.
 
-class Car
-  def initialize(make, model, year, color)
-    @make = make
-    @model = model
-    @year = year
-    @color = color
-  end
-end
+# class Car
+#   def initialize(make, model, year, color)
+#     @make = make
+#     @model = model
+#     @year = year
+#     @color = color
+#   end
+# end
 
-car = Car.new("Honda", "Accord", 2017, "Black")
-p car
+# car = Car.new("Honda", "Accord", 2017, "Black")
+# p car
 
 
 # 8 Write a Point class with attributes for x, y, and z coordinates.
 
-class Point
-  def initialize(x, y, z)
-    @x = x
-    @y = y
-    @z = z
-  end
-end
+# class Point
+#   def initialize(x, y, z)
+#     @x = x
+#     @y = y
+#     @z = z
+#   end
+# end
 
-coordinates = Point.new(32.1, 90.2, 73.2)
-p coordinates
+# coordinates = Point.new(32.1, 90.2, 73.2)
+# p coordinates
 
 
 # 9 Write a Book class with attributes for title, author, and year.
 
-class Book
-  def initialize(title, author, year)
-    @title = title
-    @author = author
-    @year = year
-  end
-end
+# class Book
+#   def initialize(title, author, year)
+#     @title = title
+#     @author = author
+#     @year = year
+#   end
+# end
 
-book = Book.new("Hunger Games", "JP Morgan", 2005)
-p book
+# book = Book.new("Hunger Games", "JP Morgan", 2005)
+# p book
 
 
 # 10 Write a Plant class with attributes for name, size, and price.
 
-class Plant
-  def initialize(name, size, price)
-    @name = name
-    @size = size
-    @price = price
-  end
+# class Plant
+#   def initialize(name, size, price)
+#     @name = name
+#     @size = size
+#     @price = price
+#   end
+# end
+
+# plant = Plant.new("Sunflower", "Large", "$50.00")
+# p plant
+
+# Deliberate Practice INTERMEDIATE LEVEL
+
+# Deliberate Practice Link 1 - INTERMEDIATE level - Insert a variable into a string using either CONCATENATION or INTERPOLATION
+
+# 1 Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
+
+first_name = "Paul"
+last_name = "George"
+
+p first_name + " " + last_name
+
+# 2 Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+
+first_name = "Brian"
+last_name = "Mitchell"
+p "#{first_name} #{last_name}"
+
+# 3 Write a program that asks the user to input a word. If the word is "marco", print "polo".
+
+# while true
+#   p "Enter A Word: "
+#   input = gets.chomp
+#     if input === "marco"
+#       p "polo"
+#       break
+#   end
+# end
+
+
+# 4 Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+
+color_one = "Black"
+color_two = "Orange"
+color_three = "Purple"
+
+p color_one + " " + color_two + " " + color_three
+
+# 5 Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
+
+color_one = "Yellow"
+color_two = "Green"
+color_three = "Blue"
+
+p "My favorite colors are #{color_one} #{color_two} and #{color_three}."
+
+
+# 6 Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+
+p "Enter a name: "
+input = gets.chomp
+if input != "Santa"
+  p "You're not Santa"
 end
 
-plant = Plant.new("Sunflower", "Large", "$50.00")
-p plant
+
+# 7 Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
+
+title = "Harry Potter"
+author = "Hunter"
+p "A popular book is " + title + " by " + author
+
+
+# 8 Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
+
+title = "Harry Potter"
+author = "Hunter"
+
+p "A popular book is #{title} by #{author}"
+
+
+# 9 Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
+
+p "Enter your password: "
+input = gets.chomp
+if input === "Joshua"
+  p "Shall we play a game?"
+else
+  p "Access denied"
+end
+
+
+# 10 Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
+
+city_one = "Chicago"
+city_two = "Miami"
+city_three = "Dallas"
+
+p "Top best cities are " + city_one + ", " + city_two + ", and " + city_three
 
 
 

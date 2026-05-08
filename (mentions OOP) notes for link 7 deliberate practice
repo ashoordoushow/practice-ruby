@@ -1,0 +1,368 @@
+This is a HUGE step.
+
+Classes are one of the foundations of object-oriented programming (OOP), which is heavily used in:
+
+* [Ruby on Rails](https://rubyonrails.org/?utm_source=chatgpt.com)
+* [Java](https://www.java.com/?utm_source=chatgpt.com)
+* [C#](https://dotnet.microsoft.com/en-us/languages/csharp?utm_source=chatgpt.com)
+* [Python](https://www.python.org/?utm_source=chatgpt.com)
+* many backend systems
+
+Classes are how developers model real-world “things” in software.
+
+---
+
+# What a Class Really Is
+
+A class is basically:
+
+```text id="jlwm2t"
+a blueprint/template for creating objects
+```
+
+---
+
+# Real-Life Analogy
+
+Think about house blueprints.
+
+Blueprint:
+
+* defines structure
+
+Actual house:
+
+* real instance created from blueprint
+
+Programming is similar.
+
+---
+
+# Example
+
+Your class:
+
+```ruby id="jlwm6f"
+class Song
+```
+
+defines:
+
+* what a song should contain
+
+Then:
+
+```ruby id="jlwm9m"
+Song.new(...)
+```
+
+creates an actual song object.
+
+---
+
+# Blueprint vs Object
+
+Blueprint/class:
+
+```ruby id="jlwm3n"
+class Person
+```
+
+Actual object:
+
+```ruby id="jlwm7z"
+person = Person.new("Mikey", 27)
+```
+
+---
+
+# Why Classes Matter So Much
+
+Real applications manage real-world entities:         Entities - means real world things - One Ex. A Car is a Entity and has attributes like engine, brake, gas, etc.
+
+* users
+* jobs
+* messages
+* products
+* accounts
+* orders
+* posts
+* comments
+
+Classes model those entities cleanly.        -> meaning - classes provide an organized way to represent real-world things in code
+
+---
+
+# Real Rails Example
+Important Bigger Realization - Rails models are basically: advanced Ruby classes with built-in database powers.
+With Rails - “Objects are connected to database records automatically.”
+- Rails created a built-in parent/base class called: APPLICATIONRECORD (a built-in Rails CLASS) - It already knows how to: talk to database, save records, update records, delete records, run queries - inherits tons of functionality from Rails.
+That's the difference between a class you create Ex. class Person (only knows what you teach it) vs. Rails class Ex. class User < ApplicationRecord (inherits tons of functionality from Rails like - It already knows how to: talk to database, save records, update records, delete records, run queries)
+
+Abstraction - means hiding complicated details and giving you a simpler way to use something - Ex. Driving, you press gas, steer - but you do not need to know about engine combustion, etc.
+Functionality - means features/behaviors a system provides Ex. - word.upcase has functionality; it converts text to uppercase
+
+In Rails:
+
+```ruby id="jlwm1k"
+class User < ApplicationRecord
+```
+
+or:
+
+```ruby id="jlwm5n"
+class Job < ApplicationRecord
+```
+
+These are classes.
+
+Your database records become objects created from classes.
+
+---
+
+# Example Using Your Job Tracker App
+
+You may have:
+
+```ruby id="jlwm8v"
+class Job
+```
+
+Attributes:
+
+* title
+* company
+* salary
+* status
+
+Then create objects:
+
+```ruby id="’wini0"
+job = Job.new(...)
+```
+
+That represents a real job application.
+
+---
+
+# What `initialize` Means
+
+You wrote:
+
+```ruby id="xmlns8"
+def initialize(name, artist, duration)
+```
+
+`initialize` is a special Ruby method. & IS REQUERIED to define your method in you class so it can automatically recieve/setup data when a new object is created and calls the class.
+
+It automatically runs when you do:
+
+```ruby id="xmlns9"
+Song.new(...)
+```
+
+It sets up the object’s starting data.
+
+---
+
+# What `@name` Means
+
+This:
+
+```ruby id="xmlns10"
+@name
+```
+
+is an instance variable.       Instance variables - allows objects to store its OWN attributes, maintain state, remember info - instance variables are variables that belong to a specific object created from a class.
+
+Meaning:
+
+* data belonging to THAT specific object.
+
+Example:
+
+```ruby id="xmlns11"
+song1 = Song.new("A", "Artist1", "3:00")
+song2 = Song.new("B", "Artist2", "4:00")
+```
+
+Each object stores its own data separately.
+
+---
+
+# Real Application Importance
+
+State / Maintain state meaning - Why This Matters, Objects would be useless if they forgot everything immediately. State allows objects to: remember user info, track balances, store settings, maintain application data. Real Application Examples - Instagram user object state: username, followers count, profile picture; Shopping cart state: products in cart,total price; Bank account state: balance, account number; Game player state: health, score, inventory - SO meaning - what values something currently has OR the current data/condition of something at a specific moment.
+
+Classes are HUGE because they help organize:
+
+* data
+* behavior
+* logic
+
+Instead of random variables everywhere.
+
+---
+
+# Without Classes (Messy)
+
+```ruby id="xmlns12"
+name = "Mike"
+age = 27
+```
+
+Now imagine:
+
+* 10 users
+* 10,000 users
+
+Becomes chaos.
+
+---
+
+# With Classes
+
+```ruby id="xmlns13"
+person = Person.new("Mike", 27)
+```
+
+Much cleaner and scalable.
+
+---
+
+# Classes Can Also Have Methods
+
+Right now your classes only store attributes.
+
+But later you’ll add behavior.
+
+Example:
+
+```ruby id="xmlns14"
+class BankAccount
+  def initialize(balance)
+    @balance = balance
+  end
+
+  def deposit(amount)
+    @balance += amount  @balance = balance + amount
+  end
+end
+ 
+```
+
+Now the object can DO things.
+
+That’s real object-oriented programming.
+
+OOP (Object Oriented Programming) - My Definition - OOP means creating classes that allow objects to be organized , manipulated, and gives functionality? - CLEANER VERSION - OOP is a programming style where code is organized around objects/classes that store data and behavior together. - EVEN SIMPLER - OOP MODELS real-world things as objects that have:
+- data (attributes/state)
+- functionality (methods/behavior)
+
+---
+
+# Real Rails Connection
+
+Rails models are basically ADVANCED CLASSES.
+
+Example:
+
+```ruby id="xmlns15"
+class Job < ApplicationRecord
+```
+
+This class:
+
+* stores data
+* communicates with database
+* validates data
+* has methods
+* has relationships
+
+Huge real-world concept.
+
+---
+
+# Why This Is a Big Milestone
+
+You’ve now gone from:
+
+* variables
+* loops
+* arrays
+* hashes
+* methods
+
+to:
+
+* modeling real-world entities
+
+That’s a MAJOR programming step.
+
+Because real applications are basically:
+
+> collections of objects interacting with each other.
+
+---
+
+# Important Bigger Concept
+
+Classes teach:
+
+* object-oriented programming - a programming style that organizes code around objects/classes that contain both data (state) and behavior (methods/functionality)
+* abstraction - hiding complicated internal details and exposing only what is neccessary to use something 
+* organization - structuring code/data clean, understandable, and manageable way
+* modular design - breaking software into smaller reusable pieces/modules with focused responsibilities
+* scalable architecture - designing software so it can continue working efficiently as users, data, and features grow
+
+This is one of the major foundations of backend engineering.
+
+---
+
+# Small Improvement You’ll Learn Later
+
+Right now:
+
+```ruby id="xmlns16"
+p song
+```
+
+prints an object reference.
+
+Later you’ll learn:
+
+* getter methods
+* attr_accessor
+* custom display methods
+
+Example:
+
+```ruby id="xmlns17"
+attr_accessor :name, :artist
+```
+
+Then you can do:
+
+```ruby id="xmlns18"
+p song.name
+```
+
+Very common in Rails.
+
+---
+
+# Biggest Mindset Shift
+
+Before classes:
+
+```text id="xmlns19"
+“store random pieces of data”
+```
+
+After classes:
+
+```text id="xmlns20"
+“model real-world entities as objects”
+```
+
+That’s a huge shift toward real software engineering thinking.
