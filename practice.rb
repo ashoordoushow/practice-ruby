@@ -561,40 +561,136 @@
 
 class Song
   def initialize(name, artist, duration)
-  @name = name
-  @artist = artist
-  @duration = duration
+    @name = name
+    @artist = artist
+    @duration = duration
   end
 end
 
-song = Song.new("Beautiful Crazy", "Luke Combs", "10:00")
-p song
+  song = Song.new("Ommemma", "Chandler Moore", "5:00")
+  p song
 
 # 2 Write a Rectangle class with attributes for width and height.
+
+class Rectangle
+  def initialize(width, height)
+    @width = width
+    @height = height
+  end
+end
+
+rectangle = Rectangle.new(12, 10)
+p rectangle
 
 
 # 3 Write a Person class with attributes for name and age.
 
+class Person
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+end
+
+person = Person.new("Mikey", 27)
+p person
+    
 
 # 4 Write a Location class with attributes for latitude and longitude.
+
+class Location
+  def initialize(latitude, longitude)
+    @latitude = latitude
+    @longitude = longitude
+  end
+end
+
+location = Location.new(57.3, 34.2)
+p location
 
 
 # 5 Write an Account class with attributes for name and balance.
 
+class Account
+  def initialize(name, balance)
+    @name = name
+    @balance = balance
+  end
+end
+
+account = Account.new("Chase", "$1,000,000")
+p account
+
 
 # 6 Write a Movie class with attributes for title, director, and year.
+
+class Movie
+  def initialize(title, director, year)
+    @title = title
+    @director = director
+    @year = year
+  end
+end
+
+movie = Movie.new("Titanic", "Michael", "2001")
+p movie
 
 
 # 7 Write a Car class with attributes for make, model, year, and color.
 
+class Car
+  def initialize(make, model, year, color)
+    @make = make
+    @model = model
+    @year = year
+    @color = color
+  end
+end
+
+car = Car.new("Honda", "Accord", 2017, "Black")
+p car
+
 
 # 8 Write a Point class with attributes for x, y, and z coordinates.
+
+class Point
+  def initialize(x, y, z)
+    @x = x
+    @y = y
+    @z = z
+  end
+end
+
+coordinates = Point.new(32.1, 90.2, 73.2)
+p coordinates
 
 
 # 9 Write a Book class with attributes for title, author, and year.
 
+class Book
+  def initialize(title, author, year)
+    @title = title
+    @author = author
+    @year = year
+  end
+end
+
+book = Book.new("Hunger Games", "JP Morgan", 2005)
+p book
+
 
 # 10 Write a Plant class with attributes for name, size, and price.
+
+class Plant
+  def initialize(name, size, price)
+    @name = name
+    @size = size
+    @price = price
+  end
+end
+
+plant = Plant.new("Sunflower", "Large", "$50.00")
+p plant
 
 
 
