@@ -698,16 +698,16 @@
 
 # 1 Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
 
-first_name = "Paul"
-last_name = "George"
+# first_name = "Paul"
+# last_name = "George"
 
-p first_name + " " + last_name
+# p first_name + " " + last_name
 
 # 2 Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
 
-first_name = "Brian"
-last_name = "Mitchell"
-p "#{first_name} #{last_name}"
+# first_name = "Brian"
+# last_name = "Mitchell"
+# p "#{first_name} #{last_name}"
 
 # 3 Write a program that asks the user to input a word. If the word is "marco", print "polo".
 
@@ -723,63 +723,227 @@ p "#{first_name} #{last_name}"
 
 # 4 Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
 
-color_one = "Black"
-color_two = "Orange"
-color_three = "Purple"
+# color_one = "Black"
+# color_two = "Orange"
+# color_three = "Purple"
 
-p color_one + " " + color_two + " " + color_three
+# p color_one + " " + color_two + " " + color_three
 
 # 5 Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
 
-color_one = "Yellow"
-color_two = "Green"
-color_three = "Blue"
+# color_one = "Yellow"
+# color_two = "Green"
+# color_three = "Blue"
 
-p "My favorite colors are #{color_one} #{color_two} and #{color_three}."
+# p "My favorite colors are #{color_one} #{color_two} and #{color_three}."
 
 
 # 6 Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
 
-p "Enter a name: "
-input = gets.chomp
-if input != "Santa"
-  p "You're not Santa"
-end
+# p "Enter a name: "
+# input = gets.chomp
+# if input != "Santa"
+#   p "You're not Santa"
+# end
 
 
 # 7 Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
 
-title = "Harry Potter"
-author = "Hunter"
-p "A popular book is " + title + " by " + author
+# title = "Harry Potter"
+# author = "Hunter"
+# p "A popular book is " + title + " by " + author
 
 
 # 8 Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
 
-title = "Harry Potter"
-author = "Hunter"
+# title = "Harry Potter"
+# author = "Hunter"
 
-p "A popular book is #{title} by #{author}"
+# p "A popular book is #{title} by #{author}"
 
 
 # 9 Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
 
-p "Enter your password: "
-input = gets.chomp
-if input === "Joshua"
-  p "Shall we play a game?"
-else
-  p "Access denied"
-end
+# p "Enter your password: "
+# input = gets.chomp
+# if input === "Joshua"
+#   p "Shall we play a game?"
+# else
+#   p "Access denied"
+# end
 
 
 # 10 Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
 
-city_one = "Chicago"
-city_two = "Miami"
-city_three = "Dallas"
+# city_one = "Chicago"
+# city_two = "Miami"
+# city_three = "Dallas"
 
-p "Top best cities are " + city_one + ", " + city_two + ", and " + city_three
+# p "Top best cities are " + city_one + ", " + city_two + ", and " + city_three
+
+# Deliberate Practice Link 2 - INTERMEDIATE Level - Map an array to a new array with some computation performed on each item
+
+# 1 Start with an array of numbers and create a new array with each number times 3.
+# For example, [1, 2, 3] becomes [3, 6, 9].
+
+# numbers = [3, 2, 9]
+# new_numbers = []
+# index = 0
+# while index < 3                         '<<' / Appending -> Operator VERY IMPORTANT to adding new values to an object!
+#   new_numbers << numbers[index] * 3  # << - operator means, adding something to the END of an existing collection or string. For this while loop you cannot use = and must use << because you want to               
+#   index += 1                         #       add 3 new values in the array, not set the new array to a new value over and over again until loop ends. That will only output 1 value(the last loop)
+# end
+
+# p new_numbers
+
+
+# numbers =  [4, 5, 2]
+# new_numbers = []
+# input = 0
+# while input < 3
+#   new_numbers << numbers[input] * 3
+#   input += 1
+# end
+
+# p new_numbers
+
+# numbers = [5, 4, 3]
+# new_numbers = []
+# numbers.each do |number|                  # .each do method / loop solution
+#   new_numbers << number * 3
+# end
+
+# p new_numbers
+# .each the method called on a collection [1,2,3].each
+# the Block do...end - a chunk of code that Ruby executes for every item in the collection.
+# The Block Vairiable (|item|) - the vertical pipes contain a temporary variable name. For each round of the loop, this variable hold the value of the current item from the collection.
+# each is a method that accepts a block of code then runs that block of code for every element in a list, and the bit between do and end is just such a block. A block is like an anonymous function or lambda. The variable between pipe characters is the parameter for this block.
+# What happens here is that for every entry in a list, name is bound to that list element, and then the expression puts "Hello #{name}!" is run with that name.
+
+# numbers = [1, 2, 4]
+# new_numbers = numbers.map { |number| number * 3 }    # .map { |parameter| first_item_in _collection -> then logic used to manipulate current values to new ones in a new list/array.}
+# p new_numbers
+
+
+# 2 Start with an array of strings and create a new array with each string upcased.
+# For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+
+strings = ["hello", "goodbye", "return"]
+new_strings = []
+strings.each do |string|
+  new_strings << string.upcase
+end
+
+p new_strings
+
+
+# 3 Start with an array of hashes and create a new array of string values from each hash's :name key.
+# For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
+
+persons = [
+  {name: "Jordan", age: 23},
+  {name: "Scottie", age: 12},
+  {name: "Shaq", age: 50}
+]
+persons_name = []
+
+persons.map {|person| persons_name << person[:name]}
+  p persons_name 
+
+
+# 4 Start with an array of numbers and create a new array with each number plus 7.
+# For example, [1, 2, 3] becomes [8, 9, 10].
+
+numbers = [33, 44, 55, 323]
+numbers_plus_seven = []
+
+numbers.each do |number|
+  numbers_plus_seven << number + 7
+end
+
+p numbers_plus_seven
+
+# 5 Start with an array of strings and create a new array with each string's length.
+# For example, ["hello", "goodbye"] becomes [5, 7].
+
+strings = ["no", "yes", "maybe", "so"]
+strings_length = []
+input = 0
+while input < strings.length
+  strings_length << strings[input].length
+  input += 1
+end
+p strings_length
+
+# 6 Start with an array of hashes and create a new array of number values from each hash's :age key.
+# For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+
+persons = [
+  {name: "Tom", age: 12},
+  {name: "Siri", age: 5},
+  {name: "Mike", age: 89}
+]
+persons_age = []
+
+persons.each do |person|
+  persons_age << person[:age]
+end
+
+p persons_age
+
+# 7 Start with an array of numbers and create a new array with each number divided by 2.
+# For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
+
+numbers = [12, 2, 32]
+numbers_divided_two = []
+
+numbers.map {|number| numbers_divided_two << number / 2}
+
+p numbers_divided_two
+
+
+# 8 Start with an array of strings and create a new array with each string's first letter only.
+# For example, ["hello", "goodbye"] becomes ["h", "g"].
+
+strings = ["nope", "Yup", "So"]
+first_letter = []
+
+strings.each do |string|
+  first_letter << string[0]
+end
+
+p first_letter
+
+
+# 9 Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
+# For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
+
+persons = [
+    {name: "bobby", age: 7},
+    {name: "mitch", age: 12},
+    {name: "sammy", age: 43}
+  ]
+age_times_two = []
+input = 0
+while input < persons.length
+  age_times_two << persons[input][:age] * 2
+  input += 1
+end
+
+p age_times_two
+
+# 10 Start with an array of numbers and create a new array with each number converted into a string.
+# For example, [1, 2, 3] becomes ["1", "2", "3"].
+
+numbers = [423, 3212, 3134]
+number_to_s = []
+
+numbers.each do |number|
+  number_to_s << number.to_s
+end
+
+p number_to_s
+
 
 
 
