@@ -828,122 +828,284 @@
 # 2 Start with an array of strings and create a new array with each string upcased.
 # For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
 
-strings = ["hello", "goodbye", "return"]
-new_strings = []
-strings.each do |string|
-  new_strings << string.upcase
-end
+# strings = ["hello", "goodbye", "return"]
+# new_strings = []
+# strings.each do |string|
+#   new_strings << string.upcase
+# end
 
-p new_strings
+# p new_strings
 
 
 # 3 Start with an array of hashes and create a new array of string values from each hash's :name key.
 # For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
-persons = [
-  {name: "Jordan", age: 23},
-  {name: "Scottie", age: 12},
-  {name: "Shaq", age: 50}
-]
-persons_name = []
+# persons = [
+#   {name: "Jordan", age: 23},
+#   {name: "Scottie", age: 12},
+#   {name: "Shaq", age: 50}
+# ]
+# persons_name = []
 
-persons.map {|person| persons_name << person[:name]}
-  p persons_name 
+# persons.map {|person| persons_name << person[:name]}
+#   p persons_name 
 
 
 # 4 Start with an array of numbers and create a new array with each number plus 7.
 # For example, [1, 2, 3] becomes [8, 9, 10].
 
-numbers = [33, 44, 55, 323]
-numbers_plus_seven = []
+# numbers = [33, 44, 55, 323]
+# numbers_plus_seven = []
 
-numbers.each do |number|
-  numbers_plus_seven << number + 7
-end
+# numbers.each do |number|
+#   numbers_plus_seven << number + 7
+# end
 
-p numbers_plus_seven
+# p numbers_plus_seven
 
 # 5 Start with an array of strings and create a new array with each string's length.
 # For example, ["hello", "goodbye"] becomes [5, 7].
 
-strings = ["no", "yes", "maybe", "so"]
-strings_length = []
-input = 0
-while input < strings.length
-  strings_length << strings[input].length
-  input += 1
-end
-p strings_length
+# strings = ["no", "yes", "maybe", "so"]
+# strings_length = []
+# input = 0
+# while input < strings.length
+#   strings_length << strings[input].length
+#   input += 1
+# end
+# p strings_length
 
 # 6 Start with an array of hashes and create a new array of number values from each hash's :age key.
 # For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
 
-persons = [
-  {name: "Tom", age: 12},
-  {name: "Siri", age: 5},
-  {name: "Mike", age: 89}
-]
-persons_age = []
+# persons = [
+#   {name: "Tom", age: 12},
+#   {name: "Siri", age: 5},
+#   {name: "Mike", age: 89}
+# ]
+# persons_age = []
 
-persons.each do |person|
-  persons_age << person[:age]
-end
+# persons.each do |person|
+#   persons_age << person[:age]
+# end
 
-p persons_age
+# p persons_age
 
 # 7 Start with an array of numbers and create a new array with each number divided by 2.
 # For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
-numbers = [12, 2, 32]
-numbers_divided_two = []
+# numbers = [12, 2, 32]
+# numbers_divided_two = []
 
-numbers.map {|number| numbers_divided_two << number / 2}
+# numbers_divided_two =  numbers.map {|number| number / 2}       # fixed .map method structure to be the cleanest version.
 
-p numbers_divided_two
+# p numbers_divided_two
 
 
 # 8 Start with an array of strings and create a new array with each string's first letter only.
 # For example, ["hello", "goodbye"] becomes ["h", "g"].
 
-strings = ["nope", "Yup", "So"]
-first_letter = []
+# strings = ["nope", "Yup", "So"]
+# first_letter = []
 
-strings.each do |string|
-  first_letter << string[0]
-end
+# strings.each do |string|
+#   first_letter << string[0]
+# end
 
-p first_letter
+# p first_letter
 
 
 # 9 Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 # For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
-persons = [
-    {name: "bobby", age: 7},
-    {name: "mitch", age: 12},
-    {name: "sammy", age: 43}
-  ]
-age_times_two = []
-input = 0
-while input < persons.length
-  age_times_two << persons[input][:age] * 2
-  input += 1
-end
+# persons = [
+#     {name: "bobby", age: 7},
+#     {name: "mitch", age: 12},
+#     {name: "sammy", age: 43}
+#   ]
+# age_times_two = []
+# input = 0
+# while input < persons.length
+#   age_times_two << persons[input][:age] * 2
+#   input += 1
+# end
 
-p age_times_two
+# p age_times_two
 
 # 10 Start with an array of numbers and create a new array with each number converted into a string.
 # For example, [1, 2, 3] becomes ["1", "2", "3"].
 
-numbers = [423, 3212, 3134]
-number_to_s = []
+# numbers = [423, 3212, 3134]
+# number_to_s = []
 
-numbers.each do |number|
-  number_to_s << number.to_s
+# numbers.each do |number|
+#   number_to_s << number.to_s
+# end
+
+# p number_to_s
+
+
+# Deliberate Practice Link 3 - INTERMEDIATE LEVEL - Select items from an array into a new array with items that match a certain condition
+
+# 1 Start with an array of numbers and create a new array with only the numbers less than 20.
+# For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+
+# numbers = [23, 11, 19, 7, 1, 69]
+# numbers_less_than_twenty = []
+
+# numbers.each do |number|
+#   if number < 20
+#     numbers_less_than_twenty << number
+#   end
+# end
+
+# p numbers_less_than_twenty
+
+
+
+
+# 2 Start with an array of strings and create a new array with only the strings that start with the letter "w".
+# For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+
+# strings = ["happy", "birthday", "Christmas", "New Year", "wish", "whopper"]
+# start_with_w = []
+
+# strings.map {|string| 
+# if string[0] == "w" 
+#   start_with_w << string
+# end
+# }
+# p start_with_w
+
+
+
+# 3 Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
+
+items = [
+  {name: "table", price: 3},
+  {name: "car", price: 8000},
+  {name: "laptop", price: 500},
+  {name: "apple", price: 1}
+]
+prices_greater_than_five = []
+index = 0
+
+while index < items.length
+  if items[index][:price] > 5
+    prices_greater_than_five << items[index]
+    end
+    index += 1
 end
 
-p number_to_s
+p prices_greater_than_five
+
+# 4 Start with an array of numbers and create a new array with only the even numbers.
+# For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+
+numbers = [99, 2, 3, 50]
+even_numbers = []
+
+numbers.each do |number|
+  if number.even?                    #.even? method is used to check if the number is even or not - true or false
+    even_numbers << number
+  end
+end
+
+p even_numbers
 
 
+# 5 Start with an array of strings and create a new array with only the strings shorter than 4 letters.
+# For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
 
+strings = ["no", "yes", "OK", "Super"]
+less_than_four_letters = []
+
+strings.map {|string| 
+if string.length < 4
+  less_than_four_letters << string
+end
+}
+p less_than_four_letters
+
+# 6 Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
+
+songs = [
+  {title: "Coffee", duration: "2:00"},
+  {title: "Ommemma", duration: "5:00"},
+  {title: "Happy", duration: "3:00"},
+]
+songs_less_than_six_letters = []
+
+songs.each do |song|
+  if song[:title].length < 6
+    songs_less_than_six_letters << song
+  end
+end
+
+p songs_less_than_six_letters
+
+# 7 Start with an array of numbers and create a new array with only the numbers greater than or equal to 23.
+# For example, [8, 23, 0, 44, 1980, 3] becomes [23, 44, 1980].
+
+numbers = [32, 2, 4, 33, 88]
+numbers_equal_or_greaterthan_twentythree = []
+
+numbers.each do |number|
+  if number >= 23
+    numbers_equal_or_greaterthan_twentythree << number
+  end
+end
+
+p numbers_equal_or_greaterthan_twentythree
+
+
+# 8 Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
+# For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+
+strings = ["hop", "jump", "Skip", "Running", "brick"]
+first_letter_not_b = []
+
+strings.each do |string|
+  if string[0] != "b"
+    first_letter_not_b << string
+  end
+end
+p first_letter_not_b
+
+
+# 9 Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
+
+
+items = [
+  {name: "book", price: 10},
+  {name: "ball", price: 3},
+  {name: "car", price:20000}
+]
+items_price_less_than_ten = []
+
+items.each do |item|
+  if item[:price] < 10
+    items_price_less_than_ten << item
+  end
+end
+
+p items_price_less_than_ten
+
+
+# 10 Start with an array of numbers and create a new array with only the odd numbers.
+# For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
+
+numbers = [999, 333, 222, 111]
+odd_numbers = []
+
+numbers.each do |number|
+  if number.odd? 
+    odd_numbers << number
+  end
+end
+
+p odd_numbers
 
