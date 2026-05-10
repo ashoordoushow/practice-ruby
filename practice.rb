@@ -1121,16 +1121,16 @@
 # numbers = [22, 1, 3]                            # not scalable version, scalability involves loops logic /algorithemic approach
 # p numbers[0] + numbers[1] + numbers[2]
 
-numbers = [22, 1, 3]   
-sum = 0
-index = 0
+# numbers = [22, 1, 3]   
+# sum = 0
+# index = 0
 
-while index < numbers.length
-  sum = sum + numbers[index]
-  index += 1
-end
+# while index < numbers.length
+#   sum = sum + numbers[index]
+#   index += 1
+# end
 
-p sum
+# p sum
 
 
 
@@ -1139,134 +1139,352 @@ p sum
 # For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
 
 
-strings = ["hiphop", "repository", "football"]
-string_combined = ""
-index = 0
+# strings = ["hiphop", "repository", "football"]
+# string_combined = ""
+# index = 0
 
-while index < strings.length
-  string_combined = string_combined + strings[index]
-  index += 1
-end
+# while index < strings.length
+#   string_combined = string_combined + strings[index]
+#   index += 1
+# end
 
-p string_combined
+# p string_combined
 
 
 # 3 Start with an array of hashes and compute the sum of the prices (from the :price key).
 # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes 105.
 
-items = [
-  {name: "food", price: 170},
-  {name: "boat", price: 100000},
-  {name: "plane", price: 1000000}
-]
-total_price_amount = 0
+# items = [
+#   {name: "food", price: 170},
+#   {name: "boat", price: 100000},
+#   {name: "plane", price: 1000000}
+# ]
+# total_price_amount = 0
 
-items.each do |item|
-  total_price_amount = total_price_amount + item[:price]
-end
-p total_price_amount
+# items.each do |item|
+#   total_price_amount = total_price_amount + item[:price]
+# end
+# p total_price_amount
 
 
 
 # 4 Start with an array of numbers and compute the the minimum number.
 # For example, [5, 10, 8, 3, 9] becomes 3.
 
-numbers = [2, 12, 100, 21]
-smallest_number = numbers[0]    # this is CHANGABLE!
+# numbers = [2, 12, 100, 21]
+# smallest_number = numbers[0]    # this is CHANGABLE!
 
-numbers.each do |number|
-    if number < smallest_number
-    smallest_number = number
-  end 
-end
+# numbers.each do |number|
+#     if number < smallest_number
+#     smallest_number = number
+#   end 
+# end
 
-p smallest_number
+# p smallest_number
 
 
 # 5 Start with an array of strings and compute the total length of all the strings.
 # For example, ["volleyball", "basketball", "badminton"] becomes 29.
 
-strings = ["sammy", "assyrians", "united states"]
-total_number_of_letters = 0
+# strings = ["sammy", "assyrians", "united states"]
+# total_number_of_letters = 0
 
-strings.each do |string|
-  total_number_of_letters = string.length + total_number_of_letters
-end
+# strings.each do |string|
+#   total_number_of_letters = string.length + total_number_of_letters
+# end
 
-p total_number_of_letters
+# p total_number_of_letters
 
 
 # 6 Start with an array of hashes and find the hash with the lowest price (from the :price key).
 # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
 
-items = [
-  {name:"computer", price: 300},
-  {name: "store", price: 50000},
-  {name: "shoes", price: 150}
-]
-lowest_price_item = items[0][:price]
+# items = [
+#   {name:"computer", price: 300},
+#   {name: "store", price: 50000},
+#   {name: "shoes", price: 150}
+# ]
+# lowest_price_item = items[0][:price]
 
-items.map {|item|
-  if item[:price] < lowest_price_item
-    lowest_price_item  = item
-  end
-}
-p lowest_price_item
+# items.map {|item|
+#   if item[:price] < lowest_price_item
+#     lowest_price_item  = item
+#   end
+# }
+# p lowest_price_item
 
 # 7 Start with an array of numbers and compute product of all the numbers.
 # For example, [5, 10, 8, 3] becomes 1200.
 
 
-numbers = [34, 23, 121, 22]
-numbers_product = 1
+# numbers = [34, 23, 121, 22]
+# numbers_product = 1
 
-numbers.each do |number|
-  numbers_product = numbers_product * number
-end
+# numbers.each do |number|
+#   numbers_product = numbers_product * number
+# end
 
-p numbers_product
+# p numbers_product
 
 
 
 # 8 Start with an array of strings and combine them all into a single string, separated by dashes.
 # For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
 
-strings = ["hello", "nope", "celebrity", "house"] 
-single_string = "-"
+# strings = ["hello", "nope", "celebrity", "house"] 
+# single_string = "-"
 
-strings.each do |string|
-  single_string += "#{string}-"
-end
-p single_string
+# strings.each do |string|
+#   single_string += "#{string}-"
+# end
+# p single_string
 
 # 9 Start with an array of hashes and find the hash with the shortest name (from the :name key).
 # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 
-items = [
-  {name: "car", price: 50000},
-  {name: "house", price: 100000},
-  {name: "building", price: 30}
-]
-shortest_name = items[0]
+# items = [
+#   {name: "car", price: 50000},
+#   {name: "house", price: 100000},
+#   {name: "building", price: 30}
+# ]
+# shortest_name = items[0]
 
-items.each do |item|
-  if item[:name].length < shortest_name[:name].length
-    shortest_name = item
-  end
-end
+# items.each do |item|
+#   if item[:name].length < shortest_name[:name].length
+#     shortest_name = item
+#   end
+# end
 
-p shortest_name
+# p shortest_name
 
 # 10 Start with an array of numbers and compute the maximum number.
 # For example, [5, 10, 8, 3] becomes 10.
 
-numbers = [21, 2, 231, 1]
-maximum_number = numbers[0]
+# numbers = [21, 2, 231, 1]
+# maximum_number = numbers[0]
 
-numbers.each do |number|
-  if number > maximum_number
-    maximum_number = number
+# numbers.each do |number|
+#   if number > maximum_number
+#     maximum_number = number
+#   end
+# end
+
+# p maximum_number
+
+# Deliberate practice INTERMEDIATE LEVEL link 5 - Write a CUSTOM CLASS with CUSTOM METHODS
+
+# 1 Write a Song class with attributes and reader/writer methods for name, artist, and duration. Then write a method that prints the name, artist, and duration in a single sentence.
+
+# class Song
+#   attr_reader :name, :artist, :duration
+#   attr_writer :name, :artist, :duration
+
+#   def initialize(name, artist, duration)
+#     @name = name
+#     @artist = artist
+#     @duration = duration
+#   end
+
+#   def print_info
+#     p "The song is #{name}, by #{artist}, and it is #{duration} long!"
+#   end
+# end
+
+# song = Song.new("Hakunamatata", "Lion  King", "7:00")
+
+# song.print_info
+
+
+# 2 Write a Rectangle class with attributes and reader/writer methods for width and height. Then write a method that returns the area of the rectangle.
+# Area - means multiplying the width and height of a shape!
+
+# class Rectangle
+#   attr_reader :width, :height
+#   attr_writer :width, :height
+
+#   def initialize(width, height)
+#     @width = width
+#     @height = height
+#   end
+
+#   def area
+#     return width * height
+#   end
+# end
+
+#   rectangle = Rectangle.new(12, 2)
+#   p rectangle.area
+
+# 3 Write a Person class with attributes and reader/writer methods for name and age. Then write a method that returns the person's name in all capital letters.
+
+class Person
+  attr_reader :name, :age
+  attr_writer :name, :age
+
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+
+  def name_upcase
+     return name.upcase
   end
 end
 
-p maximum_number
+person = Person.new("bob", 55)
+
+p person.name_upcase
+
+
+# 4 Write a Coordinate class with attributes and reader/writer methods for latitude and longitude. Then write a method that prints out the latitude and longitude in a single sentence.
+
+class Coordinate
+  attr_reader :latitude
+  attr_writer :longitude
+
+  def initialize(latitude, longitude)
+    @latitude = latitude
+    @longitude = longitude
+  end
+
+  def single_sentence
+    return "The latitude is #{@latitude}, and the longitude is #{@longitude}!"
+  end
+end
+
+coordinates = Coordinate.new(13.2, 17.7)
+p coordinates.single_sentence
+
+
+# 5 Write an Account class with attributes and reader/writer methods for name and balance. Then write a method that prints a warning if the balance is below $100.
+
+class Account
+  attr_reader :name, :balance
+  attr_writer :name, :balance
+
+  def initialize(name, balance)
+    @name = name
+    @balance = balance
+  end
+
+  def warning
+    if balance < 180
+      return "Warning"
+    end
+  end
+end
+
+  account = Account.new("John", 15)
+  p account.warning
+
+# 6 Write a Movie class with attributes and reader/writer methods for title, director, and year. Then write a method that prints out the attributes in a single sentence.
+
+
+class Movie
+  attr_reader :title, :director, :year
+  attr_writer :title, :director, :year
+
+  def initialize(title, director, year)
+    @title = title
+    @director = director
+    @year = year
+  end
+
+  def single_sentence
+    return "The movie title is #{@title}, it was produced by #{@director} in the #{@year}."
+  end
+end
+
+movie = Movie.new("Remember the Titans", "Billy", 2007)
+p movie.single_sentence
+
+# 7 Write a Car class with attributes and reader/writer methods for make, model, year, and color. Then write a method that returns the make and model as a single sentence in all lowercase letters.
+
+class Car
+  attr_reader :make, :model, :year, :color
+  attr_writer :make, :model, :year, :color
+
+  def initialize(make, model, year, color)
+    @make = make
+    @model = model
+    @year = year
+    @color = color  
+  end
+
+  def make_and_model
+    return "This is the #{make} #{model}"
+  end
+end
+
+car = Car.new("Honda", "Accord", 2007, "Blue")
+p car.make_and_model
+
+
+
+# 8 Write a Point class with attributes and reader/writer methods for x, y, and z coordinates. Then write a method that returns true if all 3 numbers are positive, otherwise it returns false.
+
+class Point
+  attr_reader :x, :y, :z
+  attr_writer :x, :y, :z
+
+  def initialize(x, y, z)
+    @x = x
+    @y = y
+    @z = z
+  end
+
+  def true_if_numbers_positive_false_otherwise
+    if x > 0 && y > 0 && z > 0
+      return true
+    else
+      false
+    end
+  end
+end
+
+point = Point.new(12.2, 12, 4)
+p point.true_if_numbers_positive_false_otherwise
+
+# 9 Write a Book class with attributes and reader/writer methods for title, author, and year. Then write a method that returns "Classic" if the book is older than 2000, otherwise it returns "Modern".
+
+class Book
+  attr_reader :title, :author, :year
+  attr_writer :title, :author, :year
+
+  def initialize(title, author, year)
+    @title = title
+    @author = author
+    @year = year
+  end
+
+  def classic_or_modern
+    if year < 2000
+      return "Classic"
+    else
+      return "Modern"
+    end
+  end
+end
+
+book = Book.new("Million Dollar Strike", "Mike", 2012)
+p book.classic_or_modern
+
+# 10 Write a Plant class with attributes and reader/writer methods for name, size, and price. Then write a method that prints out the attributes in a single sentence.
+
+class Plant
+  attr_reader :name, :size, :price
+  attr_writer :name, :size, :price
+
+  def initialize(name, size, price)
+    @name = name
+    @size = size
+    @price = price
+  end
+
+  def single_sentence
+    return "The plant is a  #{size} #{name}, and costs #{price} "
+  end
+end
+
+plant = Plant.new("Sunflower", "small", "$5.00")
+p plant.single_sentence
