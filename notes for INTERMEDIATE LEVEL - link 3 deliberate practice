@@ -1,0 +1,256 @@
+The purpose of this section is teaching:
+
+```text id="xmlns353"
+how to FILTER collections of data based on conditions/rules
+```
+
+Meaning:
+
+```text id="xmlns354"
+go through a collection and keep ONLY the items that match what you want
+```
+
+This is one of the MOST common operations in real software engineering.
+
+---
+
+# What You’re Practicing
+
+You are practicing:
+
+* looping through collections
+* checking conditions
+* selecting matching data
+* building filtered results
+* conditional collection processing
+
+---
+
+# Core Pattern Being Taught
+
+This pattern:
+
+```ruby id="xmlns355"
+new_array = []
+
+collection.each do |item|
+  if condition
+    new_array << item
+  end
+end
+```
+
+is the foundation of filtering logic.
+
+---
+
+# Simple Example
+
+Your code:
+
+```ruby id="xmlns356"
+if item[:price] < 10
+```
+
+means:
+
+```text id="xmlns357"
+“keep only cheap items”
+```
+
+---
+
+# Real App Examples
+
+This exact logic is used everywhere.
+
+---
+
+# Ecommerce
+
+```text id="xmlns358"
+show only products under $50
+```
+
+---
+
+# Job Apps
+
+```text id="xmlns359"
+show only remote jobs
+```
+
+---
+
+# Social Media
+
+```text id="xmlns360"
+show only unread notifications
+```
+
+---
+
+# Banking
+
+```text id="xmlns361"
+show only transactions over $1000
+```
+
+---
+
+# Your Job Tracker App
+
+```text id="xmlns362"
+show only jobs with status = Interview
+```
+
+---
+
+# What Makes This So Important
+
+Real applications almost NEVER display:
+
+> all data
+
+Applications constantly filter data based on:
+
+* user searches
+* permissions
+* conditions
+* business rules
+
+---
+
+# Bigger Programming Concepts This Teaches
+
+This section introduces:
+
+* filtering collections
+* business logic
+* conditional data processing
+* search/query thinking
+* scalable data handling
+* collection processing
+* data pipelines - a sequence of steps where data flows through a system and gets processed, transformed, filtered, or moved from one stage to another before reaching a final output.
+
+---
+
+# Huge Database Connection
+
+This Ruby:
+
+```ruby id="xmlns363"
+if item[:price] < 10
+```
+
+connects directly to SQL thinking:
+
+```sql id="xmlns364"
+WHERE price < 10
+```
+
+That’s VERY important.
+
+You are beginning to think like databases and APIs work.
+
+---
+
+# Rails Connection
+
+Rails filtering/querying:
+
+```ruby id="xmlns365"
+Job.where(status: "Applied")
+```
+
+Same concept.
+
+---
+
+# React Connection
+
+Frontend filtering:
+
+```javascript id="xmlns366"
+jobs.filter(job => job.remote === true)
+```
+
+Same concept.
+
+---
+
+# Important Difference From `.map`
+
+# `.map`
+
+transform ALL items into something new.
+
+# Filtering/selecting
+
+keep ONLY certain items.
+
+---
+
+# Example
+
+`.map`
+
+```ruby id="xmlns367"
+numbers.map { |number| number * 2 }
+```
+
+Transforms everything.
+
+---
+
+Filtering:
+
+```ruby id="xmlns368"
+numbers.select { |number| number.even? }
+```
+
+Keeps only matching items.
+
+---
+
+# Important Realization
+
+Your arrays of hashes practice is VERY real-world:
+
+```ruby id="xmlns369"
+[
+  {name: "car", price: 8000}
+]
+```
+
+This structure is exactly how:
+
+* APIs
+* JSON responses
+* database records
+
+often look in real applications.
+
+---
+
+# Biggest Purpose Overall
+
+This section is teaching you:
+
+```text id="xmlns370"
+how real applications search through data and decide what data should be included or excluded
+```
+
+That is foundational for:
+
+* APIs
+* Rails
+* React
+* databases
+* dashboards
+* search systems
+* backend logic
+* frontend rendering
+* recommendation systems
+
+This is VERY real application programming.
